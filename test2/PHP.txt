@@ -1,0 +1,41 @@
+function bubbleSort($numbers) {
+    $cnt = count($numbers);
+    for ($i = 0; $i < $cnt - 1; $i++) {
+        for ($j = 0; $j < $cnt - $i - 1; $j++) {
+            if ($numbers[$j] > $numbers[$j + 1]) {
+                $temp = $numbers[$j];
+                $numbers[$j] = $numbers[$j + 1];
+                $numbers[$j + 1] = $temp;
+            }
+        }
+    }
+ 
+    return $numbers;
+}
+ 
+$num = array(20, 40, 60, 80, 30, 70, 90, 10, 50, 0);
+var_dump(bubbleSort($num));
+ 
+//输出结果如下：
+//array(10) {
+//  [0]=>
+//  int(0)
+//  [1]=>
+//  int(10)
+//  [2]=>
+//  int(20)
+//  [3]=>
+//  int(30)
+//  [4]=>
+//  int(40)
+//  [5]=>
+//  int(50)
+//  [6]=>
+//  int(60)
+//  [7]=>
+//  int(70)
+//  [8]=>
+//  int(80)
+//  [9]=>
+//  int(90)
+//}
