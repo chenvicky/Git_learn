@@ -1,2 +1,5 @@
+²âÊÔhelloworld Êý¾Ý£¡£¡£¡
+
+
 fprintf ( 1, 'Hello, world!' );
 quit
